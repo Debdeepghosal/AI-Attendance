@@ -54,6 +54,8 @@ canvas{
     #header{
         width: 100%;
         letter-spacing: normal;
+        font-size: x-large;
+
     }
     #video{
         width: 100%;

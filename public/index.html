@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="face-api.min.js"></script>
+        <script defer src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <title>AI-Attendence</title>
+    <link rel="stylesheet" href="ai-attendence.css">
+</head>
+<body>
+    <div id="header">AI-Attendance</div>
+    <video id="video" width="720" height="560"  muted controls></video>
+    <div id="content">   
+    
+    <h1 id="clickheading" style="position: absolute;z-index: 3;right: 0%;width: 100%;font-size: 1.8rem;padding-top: 8%;color: white;font-family: sans-serif;">Please Click on Play Button to start Camera!</h1>
+    <h1 id="studentname" style="width: 100%;z-index: 3;right: 0%;position: absolute;font-size: 1.8rem;color: white;font-family: sans-serif;padding-top: 31%;">Detected Student: Unknown </h1>
+    
+    <img id="studentimg" style="margin: 0;padding: 0;box-sizing: border-box;z-index: 3;font-size: 1.8rem;color: white;position: absolute;font-family: sans-serif;height: 42%;width: 40%;margin-top: 3rem;right: 32%;border-radius: 100rem;top: 47%;" >
+</div>
+<script>
+    $( document ).ready(function() {
+    var ctrlVideo = document.getElementById("video"); 
+    
+    $('button').click(function(){
+    if ($('button').hasClass("active")){
+    
+    ctrlVideo.play();
+    
+    $('button').html("Pause Camera");
+    $('button').toggleClass("active");
+    } else {
+    
+    ctrlVideo.pause();
+    
+    $('button').html("Turn On Camera");
+    $('button').toggleClass("active");
+    }
+    });
+    
+    });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+

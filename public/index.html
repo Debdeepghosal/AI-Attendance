@@ -21,29 +21,9 @@
     <h1 id="studentname" style="width: 100%;z-index: 3;right: 0%;position: absolute;font-size: 1.8rem;color: white;font-family: sans-serif;padding-top: 31%;">Detected Student: Unknown </h1>
     
     <img id="studentimg" style="margin: 0;padding: 0;box-sizing: border-box;z-index: 3;font-size: 1.8rem;color: white;position: absolute;font-family: sans-serif;height: 42%;width: 40%;margin-top: 3rem;right: 32%;border-radius: 100rem;top: 47%;" >
+    <p id="sheetLink" style="position: relative;margin: auto;margin-top: 100vh;height: 3rem;font-size: 2rem;z-index: 99;color: #2c2f40;border: 2px solid black;width: 17rem;padding: 0rem 1rem;background: #c5c5eb;"><a  href="./attendance/sheet">Attendance Sheet</a></p>
 </div>
-<script>
-    $( document ).ready(function() {
-    var ctrlVideo = document.getElementById("video"); 
-    
-    $('button').click(function(){
-    if ($('button').hasClass("active")){
-    
-    ctrlVideo.play();
-    
-    $('button').html("Pause Camera");
-    $('button').toggleClass("active");
-    } else {
-    
-    ctrlVideo.pause();
-    
-    $('button').html("Turn On Camera");
-    $('button').toggleClass("active");
-    }
-    });
-    
-    });
-    </script>
+
 
 </body>
 </html>

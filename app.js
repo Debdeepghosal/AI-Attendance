@@ -31,7 +31,9 @@ app.post('/attendance',(req,res)=>{
 
   
 })
-
+app.get("/attendance/sheet",(req,res)=>{
+  res.sendFile(__dirname+"/attendance.txt");
+})
 
 app.listen(port,()=>{
   console.log("Listening on port ",port);
